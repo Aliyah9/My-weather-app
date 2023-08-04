@@ -63,7 +63,7 @@ function displayCurrent(a, Data) {
     let n = `<div class="today forecast">
       <div class="forecast-header" id="today">
         <div class="day">${days[e.getDay()]}</div>
-        <div class="date">${e.getDate() + monthNames[e.getMonth()]}</div>
+        <div class="date">${e.getDate() + `<div class="date px-1">${monthNames[e.getMonth()]}</div>`}</div>
       </div>
       <div class="forecast-content" id="current">
         <div class="location">${a.name}</div>
