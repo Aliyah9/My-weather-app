@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="site-content">
+
+        <div class="site-header">
+            <div class="container">
+
+                <a class="branding" href="indx.html">
+                    <img src="./css/logo@2x.png" width="64" height="38" alt="logo">
+
+                    <div class="logo-type">
+                        <h1 class="site-title">Weather</h1>
+                        <small class="site-description">tagline goes here</small>
+                    </div>
+                </a>
+
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle">
+                        <li class="fa fa-bars"></li>
+                    </button>
+                    <ul class="menu">
+
+                        <li class="menu-item current-menu-item">
+                            <a href="indx.html">Home</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="#">Live Cameras</a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="#">Photos</a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="mobile-navigation">
+                        <ul class="menu">
+                            <li class="menu-item current-menu-item">
+                                <a href="indx.html">Home</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="menu-item current-menu-item">
+                                <a href="#">Live Cameras</a>
+                            </li>
+                            <li class="menu-item current-menu-item">
+                                <a href="#">Photos</a>
+                            </li>
+                            <li class="menu-item current-menu-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="container">
+
+                <form class="find-location">
+                    <input type="text" placeholder="Find your location..." id="search-bar">
+                    
+                    <input type="button" value="Find" id="submit">
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="forecast-table">
+            <div class="container">
+                <div class="forecast-container" id="forecast">
+                    <div class="today forecast">
+
+                        <div class="forecast-header" id="today">
+                            
+                            
+                        </div>
+                        <div class="forecast-content" id="current">
+
+                            <div class="location" id="loc">Cairo</div>
+
+
+                            <div class="degree">
+
+                                
+                                <div class="num">
+                                
+                                    <div id="deg">
+
+
+                                    </div>
+                                    
+                                    <sup>
+
+                                        o
+                                    </sup>
+                                    C
+                                </div>
+
+                                
+                                <div class="forecast-icon">
+                                    <img width="90" alt="" id="icon">
+                                </div>
+                            </div>
+                            
+
+
+                            <div class="custom" id="condition">
+
+
+                            </div>
+                              <div class="div">
+                                <span id="chanceOfRain">
+                                
+                                </span>
+
+                                <img id="dayIcon" width="21" height="21" alt="rain-icon">
+
+                              </div>
+
+                            
+
+                            <span>
+                                <img src="./css/icon-wind@2x.png" width="23" height="21" alt="">
+
+                                18km/h
+                            </span>
+
+                            <span>
+                                <img src="./css/icon-compass@2x.png"  width="21" height="21"alt="">
+                                East
+                            </span>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="forecast">
+
+                       <div class="forecast-header">
+                        <div class="day" id="day1"></div>
+
+                       </div>
+
+                       <div class="forecast-content">
+                        <div class="forecast-icon" >
+                            <img width="48" alt="" id="forecast-icon">
+                        </div>
+
+                           <div class="div d-flex justify-content-center p-3">
+
+                            <div class="degree" id="max-deg">
+
+                            </div>
+                         <div class="degree">
+ 
+                             <sup>o</sup>
+                             C
+                         </div>
+                           </div>
+                            
+
+
+        
+
+                           <small class="div d-flex justify-content-center p-3">
+
+                            <div  id="min-deg">
+
+                            </div>
+                         <div>
+ 
+                             <sup>o</sup>
+                             C
+                         </div>
+                        </small>
+
+                        <div class="custom" id="day1condition">
+
+                            
+                        </div>
+                       </div>
+
+                    </div>
+
+
+
+                    <div class="forecast">
+
+                        <div class="forecast-header">
+                            <div class="day" id="day2"></div>
+
+                       </div>
+
+                        <div class="forecast-content">
+                            <div class="forecast-icon">
+                                <img id="forecast-icon2" width="48" alt="">
+                            </div>
+
+                            <div class="div d-flex justify-content-center p-3">
+
+                                <div class="degree" id="max-deg2">
+    
+                                </div>
+                             <div class="degree">
+     
+                                 <sup>o</sup>
+                                 C
+                             </div>
+                               </div>
+
+
+                            <small class="div d-flex justify-content-center p-3">
+
+                            <div  id="min-deg2">
+
+                            </div>
+                         <div>
+ 
+                             <sup>o</sup>
+                             C
+                         </div>
+                        </small>
+                        <div class="custom" id="day2condition">
+
+                            
+                        </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="#" class="subscribe-form">
+                            <input type="text" class="my-4" placeholder="Enter your email to subscribe...">
+                            <input type="submit" class="m-2" value="Subscribe">
+                        </form>
+
+
+                    </div>
+
+
+
+                    <div class="col-md-3 col-md-offset-1">
+
+                        <div class="social-links">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+
+                            </a>
+
+
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+
+                            <a href="#">
+                                <i class="fa-brands fa-google-plus"></i>
+                            </a>
+
+
+                            <a href="">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+    
+
+
+
+
+
+
+     <script src="./java script/all.min.js"></script>
+    <script src="./java script/bootstrap.bundle.min.js"></script>
+
+    <script src="./java script/main.js"></script>
+    
+</body>
+</html>
